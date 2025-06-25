@@ -1,0 +1,38 @@
+@use '/src/styles/_variables' as *;
+
+.logo-container{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-200;
+    text-align: right;
+}
+
+.logo-container h1{
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.logo-container img{
+    width: 40px;
+    padding: 5.7104px;
+    border-radius: .5rem;
+}
+
+.logo-container img.html{
+    background-color: $clr-orange-50;
+}
+.logo-container img.css{
+    background-color: $clr-green-100;
+}
+.logo-container img.javascript{
+    background-color: $clr-blue-50;
+}
+.logo-container img.accessibility{
+    background-color: $clr-purple-100;
+}
+
+@media (min-width: $br-tablet){
+    
+}

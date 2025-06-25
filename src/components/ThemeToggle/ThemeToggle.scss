@@ -1,0 +1,44 @@
+@use '/src/styles/_variables' as *;
+
+.theme-switch{
+    width: fit-content;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 14px;
+    color: $clr-grey-500;
+}
+
+[data-theme='dark'] .icon{
+    color: white;
+}
+
+.toggle-button{
+    display: flex;
+    background-color: $clr-purple-600;
+    width: 2rem;
+    height: 1.25rem;
+    border: 0;
+    border-radius: 62.4375rem;
+    padding: .25rem;
+    cursor: pointer;
+}
+
+.toggle-button.dark .circle{
+    transform: translateX(calc(100%));
+    // justify-content: flex-end;
+}
+
+
+.circle{
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform ease-in-out .3s;
+}

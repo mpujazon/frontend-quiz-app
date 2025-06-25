@@ -1,0 +1,42 @@
+@use '/src/styles/_variables' as *;
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: $clr-blue-900;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: $clr-grey-50;
+  background-image: url('/public/images/pattern-background-mobile-light.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='dark']{
+  body{
+    background-image: url('/public/images/pattern-background-mobile-dark.svg');
+    background-color: $clr-blue-900;
+    color: white;
+  }
+}
+
+// @media (prefers-color-scheme: dark){
+//   body{
+//     background-image: url('/public/images/pattern-background-mobile-dark.svg');
+//     background-color: $clr-blue-900;
+//   }
+// }
