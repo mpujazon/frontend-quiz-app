@@ -1,6 +1,5 @@
 # Notes
 ## To do
-- Create `/src/pages` directory and restructure files.
-- Install react-router and read the basics.
-- Add styles to `StartMenu.jsx`
-
+- Continuar con el desarrollo de Questions.jsx y Questions.scss.
+- Crear el componente ProgressBar.jsx.
+- Questions.jsx aún en la fase de implementación mobile

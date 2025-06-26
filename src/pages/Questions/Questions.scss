@@ -1,0 +1,31 @@
+@use '/src/styles/variables' as *;
+
+.question-container{
+    padding: 2rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.quizz-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.progress-text{
+    font-size: .875rem;
+    line-height: 150%;
+    color: $clr-grey-500;
+    font-weight: 400;
+}
+
+[data-theme='dark'] .progress-text{
+    color: $clr-blue-300;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+}

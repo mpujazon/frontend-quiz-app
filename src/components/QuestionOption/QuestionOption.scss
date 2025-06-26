@@ -1,0 +1,49 @@
+@use '/src/styles/variables' as *;
+
+.option-card{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.option-letter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $clr-grey-50;
+    border-radius: 6px;
+    color: $clr-grey-500;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.option-text{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+[data-theme='dark']{
+    .option-card{
+        background-color: $clr-blue-850;
+    }
+}
+
+@media (min-width: $br-tablet){
+    .option-card{
+        gap: 2rem;
+        border-radius: 24px;
+    }
+    .option-letter{
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.75rem;
+        border-radius: 12px;
+    }
+    .option-text{
+        font-size: 1.75rem;
+    }
+}
