@@ -5,12 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: $spacing-200;
+    gap: 1rem;
     text-align: right;
 }
 
-.logo-container h1{
+.logo-container p{
     font-size: 18px;
+    font-weight: 500;
     line-height: 100%;
 }
 
@@ -34,5 +35,10 @@
 }
 
 @media (min-width: $br-tablet){
-    
+    .logo-container{
+        gap: 2rem;
+    }
+    .logo-container p{
+        font-size: 1.75rem;
+    }
 }

@@ -34,6 +34,31 @@ body {
   }
 }
 
+@media (min-width: $br-tablet){
+  body{
+    background-image: url('/public/images/pattern-background-tablet-light.svg');
+    background-size: auto;
+    background-position-x: -30px;
+    background-position-y: -20px;
+    background-size: 50%;
+  }
+  [data-theme='dark']body{
+    background-image: url('/public/images/pattern-background-tablet-dark.svg');
+  }
+}
+
+@media(min-width: $br-desktop){
+  body{
+    background-image: url('/public/images/pattern-background-desktop-light.svg');
+    background-size: cover;
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  [data-theme='dark']body{
+    background-image: url('/public/images/pattern-background-desktop-dark.svg');
+  }
+}
+
 // @media (prefers-color-scheme: dark){
 //   body{
 //     background-image: url('/public/images/pattern-background-mobile-dark.svg');

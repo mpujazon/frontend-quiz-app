@@ -11,8 +11,6 @@ const ThemeToggle = () => {
         return window.matchMedia('(prefers-color-scheme: dark)'.matches);
     });
 
-
-
     useEffect ( () => {
         const root = document.documentElement;
         if(darkMode){

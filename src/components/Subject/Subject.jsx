@@ -9,7 +9,7 @@ const Subject = ({ name }) => {
                     src={`/images/icon-${name.toLowerCase()}.svg`} 
                     alt={`${name} logo`}
                 />
-                <h1>{ name }</h1>
+                <p>{ name }</p>
             </div>
         ) : ( <span></span> )
     )
