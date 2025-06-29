@@ -8,6 +8,7 @@ import Card from '/src/components/Card/Card';
 import jsonData from '/src/data.json';
 import QuestionOption from '../../components/QuestionOption/QuestionOption';
 import { useState } from 'react';
+import ProgressBar from '../../components/ProgressBar/ProgressBar';
 
 function Questions({subject}) {
     const [questionIndex, setquestionIndex] = useState(4);
@@ -26,9 +27,7 @@ function Questions({subject}) {
                 <div className='quizz-info'>
                     <p className='progress-text'><em>Question {questionIndex + 1} of {questions.length}</em></p>
                     <p className='question'>{questions[questionIndex].question}</p>
-                    <div className='progress-bar-structure'>
-                        <div className='progress-bar-percentage'></div>
-                    </div>
+                    <ProgressBar percentage={15}/>
                 </div>
                 <div className='options-submit'>
                     <div className='options'>
