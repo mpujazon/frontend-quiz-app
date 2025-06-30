@@ -9,7 +9,7 @@ const ButtonSubmit = ({text='Submit Answer', isDisabled, onClick, showTooltip}) 
                 >
                 {text}
             </button>
-            <p className={`tooltip ${showTooltip? '' : 'hidden'}`}><img className='error-icon' src="/public/images/icon-error.svg" alt="Error icon" />Please select an answer</p>
+            <p className={`tooltip ${showTooltip? '' : 'hidden'}`}><img className='error-icon' src="/images/icon-error.svg" alt="Error icon" />Please select an answer</p>
         </>
     )
 }
