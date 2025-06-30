@@ -27,11 +27,14 @@ const Score = () => {
                     <strong>You scored...</strong>
                 </p>
                 <div className="score-container">
-                    <Subject name={subject}></Subject>
-                    <p className="score">{score}</p>
-                    <p className="questions-number">out of {questions}</p>
+                    <div clas>
+                        <Subject name={subject}></Subject>
+                        <p className="score">{score}</p>
+                        <p className="questions-number">out of {questions}</p>
+                    </div>
+                    <br />
+                    <ButtonSubmit text="Play Again" onClick={handleClick}/>
                 </div>
-                <ButtonSubmit text="Play Again" onClick={handleClick}/>
             </main>
         </>
     )

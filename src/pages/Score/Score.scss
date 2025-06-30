@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    margin: 0 auto;
     padding: 2rem 1.5rem;
 }
 
@@ -28,6 +29,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-align: center;
 }
 
 [data-theme='dark'] .score-container{
@@ -44,10 +46,43 @@
     color: $clr-grey-500;
 }
 
-[data-theme='dark']{
+[data-theme='dark'] .questions-number{
     color: $clr-blue-300;
 }
 
 .button-submit{
     width: 100%;
+}
+
+@media (min-width: $br-tablet){
+    .score-main-container{
+        padding: 2rem 4rem;
+        width: 90%;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .score-title{
+        font-size: 4rem;
+    }
+    .score{
+        font-size: 9rem;
+    }
+    .questions-number{
+        font-size: 1.5rem;
+        line-height: 150%;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: $br-desktop){
+    .score-main-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9rem;
+        max-width: initial;
+    }
+
+    .score-title{
+        align-self: start;
+    }
 }
