@@ -1,6 +1,6 @@
 @use '/src/styles/variables' as *;
 
-.progress-bar-structure{
+.progress-bar{
     display: flex;
     align-items: center;
     padding: .25rem;
@@ -16,6 +16,6 @@
     border-radius: 6.5rem;
 }
 
-[data-theme='light'] .progress-bar-structure{
+[data-theme='light'] .progress-bar{
     background-color: white;
 }

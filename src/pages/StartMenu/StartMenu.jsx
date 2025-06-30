@@ -9,7 +9,7 @@ import Card from '/src/components/Card/Card';
 function StartMenu() {
     return (
         <>
-            <header className="header">
+            <header className="header"> 
                 <Subject name={null}></Subject>
                 <ThemeToggle></ThemeToggle>
             </header>

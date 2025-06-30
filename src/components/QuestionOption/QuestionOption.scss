@@ -8,7 +8,6 @@
     gap: 1rem;
     align-items: center;
 }
-
 .option-letter{
     display: flex;
     justify-content: center;
@@ -21,7 +20,18 @@
     font-size: 1.125rem;
     font-weight: 500;
 }
-
+.option-card:hover, .option-card.selected{
+    outline: 3px solid $clr-purple-600;
+    outline-offset: -3px;
+    cursor: pointer;
+}
+.option-card:hover .option-letter, .option-card.selected .option-letter{
+    background-color: $clr-purple-600;
+    color: white;
+}
+.option-card:active{
+    scale: 1.03;
+}
 .option-text{
     font-size: 1.125rem;
     font-weight: 500;
@@ -30,6 +40,43 @@
     .option-card{
         background-color: $clr-blue-850;
     }
+}
+.option-card.correct .option-letter{
+    background-color: $clr-green-500;
+    color: white;
+}
+.option-card.correct{
+    outline: 3px solid $clr-green-500;
+    outline-offset: -3px;
+}
+.option-card.correct::after{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/public/images/icon-correct.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+.option-card.wrong .option-letter{
+    background-color: $clr-red-500;
+    color: white;
+}
+.option-card.wrong{
+    outline: 3px solid $clr-red-500;
+    outline-offset: -3px;
+}
+
+.option-card.wrong::after{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/public/images/icon-error.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
 }
 
 @media (min-width: $br-tablet){
@@ -45,5 +92,25 @@
     }
     .option-text{
         font-size: 1.75rem;
+    }
+    .option-card.correct::after{
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url('/public/images/icon-correct.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: auto;
+    }
+    .option-card.wrong::after{
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url('/public/images/icon-error.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: auto;
     }
 }

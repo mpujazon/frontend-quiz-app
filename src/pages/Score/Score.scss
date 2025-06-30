@@ -1,0 +1,53 @@
+@use '/src/styles/variables' as *;
+
+.score-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem 1.5rem;
+}
+
+.score-title{
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.score-title strong{
+    font-weight: 500;
+}
+
+.score-container{
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+[data-theme='dark'] .score-container{
+    background-color: $clr-blue-850;
+}
+
+.score{
+    font-size: 5.5rem;
+    font-weight: 500;
+}
+
+.questions-number{
+    font-size: 1.125rem;
+    color: $clr-grey-500;
+}
+
+[data-theme='dark']{
+    color: $clr-blue-300;
+}
+
+.button-submit{
+    width: 100%;
+}
