@@ -12,7 +12,7 @@ import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import ButtonSubmit from '../../components/ButtonSubmit/ButtonSubmit';
 
 function Questions({subject}) {
-    const [questionIndex, setQuestionIndex] = useState(9);
+    const [questionIndex, setQuestionIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
     const [isAnswered, setisAnswered] = useState(false);
     const [textButton, setTextButton] = useState('Submit Answer');
